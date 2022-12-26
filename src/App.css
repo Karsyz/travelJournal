@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    color: rgb(43, 40, 58);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    height: 55px;
+    background: rgb(245, 90, 90);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav--logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+nav h1 {
+    font-weight: 500;
+    letter-spacing: -0.075em;
+    color: rgb(255, 255, 255);
+}
+
+.cards-list {
+    padding: 18px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 470px;
+    max-height: 204px;
+    font-size: 12px;
+    display: flex;          
+    flex-direction: row; 
+    align-items: center;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    padding: 18px 0;
+}
+
+.cardText {
+    margin-left: 20px;
+}
+
+.card--image {
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--loc {
+    height: 10px;
+    margin-right: 4px;
+}
+
+.card--country {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    margin-right: 12px;
+}
+
+.card--googleMaps {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(145, 142, 155);
+}
+
+.card--title {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 18px;
+    margin-top: 7px;
+}
+
+.card--dates {
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.card--description {
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    width: 325px;
+}
+
+.card:last-child {
+    border: none;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-width: none;
+        max-height: none;     
+        flex-direction: column; 
+    }
+
+    .card--image {
+        width:300px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 9px;
+    }
+
+    .card--description {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .cardText {
+        margin-top: 5px;
+        width: 300px;
+        margin-left: 0;
+    }
+}
